@@ -1,0 +1,39 @@
+
+$primary-color: #28a745;
+
+
+.box-search {
+  background-color: #FFF;
+  padding: 1rem 0 1rem 0;
+}
+
+.box-search-results {
+  .no-results {
+    color: #FFF;
+    span {
+      font-size: 5rem;
+      display: block;
+    }
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+}
+.panel-default {
+  padding: 1rem 2rem;
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  .list-group {
+    .list-group-item {
+      p {
+        margin-bottom: 0;
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+}

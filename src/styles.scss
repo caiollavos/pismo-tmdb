@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700');
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background: #45484d;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+
+  .jumbotron {
+    padding: 3.5rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+  }
+}

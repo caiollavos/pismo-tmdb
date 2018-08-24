@@ -1,0 +1,77 @@
+<app-search></app-search>
+
+<div class="box-movie">
+  <div class="container" *ngIf="movie">
+    <div class="movie-details">
+      <h2>{{movie.title}}</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <div class="card">
+            <img class="card-img" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <ul class="list-group list-group-flush teste">
+              <li class="list-group-item">
+                <p>
+                  <small>Título</small>
+                  <span>{{ movie.title }}</span>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p>
+                <small>Data de lançamento</small>
+                <span>{{ movie.release_date }}</span>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p>
+                <small>Popularidade</small>
+                <span>{{ movie.popularity }}</span>
+            </p>
+            </li>
+            <li class="list-group-item">
+              <p>
+                <small>Genero</small>
+                <span *ngFor="let genre of movie.genres">
+                  {{ genre.name }} -
+                </span>
+              </p>
+            </li>
+            <li class="list-group-item">
+                <p>
+                  <small>Sinópse</small>
+                  <span>{{ movie.overview }}</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card rating">
+            <div class="card-body">
+              <h5 class="card-title">Média de avaliaçãoes</h5>
+              <p>
+                <span class="">{{ movie.vote_average }}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Produtora</h5>
+              <ul>
+                <li *ngFor="let prod_companies of movie.production_companies">
+                  <p>{{ prod_companies.name }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

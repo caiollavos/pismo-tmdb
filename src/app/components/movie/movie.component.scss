@@ -1,0 +1,44 @@
+.box-movie {
+  .movie-details {
+    padding: 2rem 0;
+
+    h2 {
+      color: white;
+    }
+    .rating {
+      text-align: center;
+
+      p {
+        padding: 20px;
+
+        span {
+          background-color: green;
+          border: 3px solid green;
+          border-radius: 50px;
+          letter-spacing: -2px;
+          font-size: 3rem;
+          color: white;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list-group {
+  .list-group-item {
+    p {
+      margin-bottom: 0;
+      small {
+        display: block;
+      }
+    }
+  }
+}
+
+
