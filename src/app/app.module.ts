@@ -13,6 +13,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/movies/list/list.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchProtocolComponent } from './components/search-protocol/search-protocol.component';
 
 
 
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SearchComponent,
     HomeComponent,
     ListComponent,
-    FooterComponent
+    FooterComponent,
+    SearchProtocolComponent
   ],
   exports: [
     NavbarComponent

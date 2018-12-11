@@ -10,6 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
   public term: string;
+  public term2: string;
+  public term3: string;
   public searchRes = [];
   public pathHome = false;
 
@@ -29,8 +31,12 @@ export class SearchComponent implements OnInit {
     this.router.navigate(['search', { term: this.term }]);
   }
 
+  testinho() {
+    this.router.navigate([{ term: this.term + this.term2 }]);
+  }
+
   onSearch(term: string) {
-    this._movieService.searchMovies(term).subscribe((res: any) => {
+    this._movieService.searchTest(this.term, this.term2, this.term3).subscribe((res: any) => {
       this.searchRes = res.results;
       console.log(this.searchRes);
       this.pathHome = true;

@@ -1,0 +1,13 @@
+<div class="box-search">
+  <div class="container">
+    <form (ngSubmit)="doSearch()">
+      <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="term" name="term" placeholder="CPF">
+        <input type="text" class="form-control" [(ngModel)]="term2" name="term2" placeholder="Protocolo">
+        <button type="submit" class="btn btn-secondary">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
