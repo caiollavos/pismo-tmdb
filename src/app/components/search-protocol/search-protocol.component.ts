@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SearchProtocolComponent implements OnInit {
   public term: string;
   public term2: string;
-  public searchRes = [];
+  public searchRes = '';
   public pathHome = false;
 
   constructor(
@@ -33,7 +33,7 @@ export class SearchProtocolComponent implements OnInit {
   onSearch(term: string) {
     this._mainService.searchTest(this.term, this.term2).subscribe((res: any) => {
       this.searchRes = res.results;
-      console.log(this.searchRes);
+      console.log('RESSS', this.searchRes);
       this.pathHome = true;
     });
   }
